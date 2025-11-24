@@ -6,3 +6,5 @@ agents/MapuAlphaOriginal
 gui_play.py
 play.sh
 README.md
+*.so
+*.pyd
