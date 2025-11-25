@@ -1,9 +1,11 @@
 haic_env/
 .vscode/
 __pycache__/
-*.zip
 agents/MapuAlphaOriginal
 gui_play.py
 play.sh
 *.so
 *.pyd
+build/
+dist/
+*.spec
