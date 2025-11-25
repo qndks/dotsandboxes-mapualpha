@@ -95,9 +95,9 @@ XYZ choose_move_wrapper(const BoardLines &board) {
     g_nodes = 0;      // How many nodes has been explored
     uint64_t code = encode_board_lines(board);
     int move_count = __builtin_popcountll(code);
+    static thread_local mt19937 rng(random_device{}()); // Randomize order of node exploration
     if (prev_move_count > move_count) {
         g_timeLeft = g_timeLimitMs;                         // Reset timer
-        static thread_local mt19937 rng(random_device{}()); // Randomize order of node exploration
         shuffle(order.begin(), order.end(), rng);
     }
     prev_move_count = move_count;
