@@ -56,3 +56,5 @@ If your system does not have it installed, install it with:
 MapuAlpha does not require Python to be installed system-wide,
 but the Tk runtime must be present for the GUI.
 
+# ScreenShot
+![Screenshot - Gameplay 1](screenshot.png)
